@@ -1,0 +1,12 @@
+class InspectionDetailDTO {
+  constructor(inspectionDetailData) {
+    if (!inspectionDetailData.inspectionId || !inspectionDetailData.inspectableId || !inspectionDetailData.result || !inspectionDetailData.observation) {
+      throw new Error('Missing required properties');
+    }
+
+    this.inspectionId = inspectionDetailData.inspectionId;
+    this.inspectableId = inspectionDetailData.inspectableId;
+    this.result = inspectionDetailData.result;
+    this.observation = inspectionDetailData.observation;
+  }
+}

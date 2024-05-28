@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="d-flex gap-2 justify-content-center py-5">
+  <div id="inspetor-content" class="d-none">
+    <!-- O conteúdo do inspetor aparece aqui -->
+  </div>
+
+  <div id="supervisor-content" class="d-none">
+    <!-- O conteúdo do supervisor aparece aqui -->
+  </div>
+
+  <div id="page-404" class="d-none">
+    404 - Página não encontrada
+  </div>
+</div>
+
+  <!-- Nova Inspeção Modal-->
+  <div class="modal fade" id="addInspectionModal" tabindex="-1" aria-labelledby="addInspectionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addInspectionModalLabel">Adicionar Inspeção</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addInspectionForm">
+            <div class="mb-3">
+              <label for="vehicleId" class="form-label">Vehicle ID</label>
+              <select class="form-control" id="vehicleId" name="vehicleId"></select>
+            </div>
+            <div class="mb-3">
+              <label for="inspectorId" class="form-label">Inspector ID</label>
+              <input type="text" class="form-control" id="inspectorId" name="inspectorId" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="comment" class="form-label">Comment</label>
+              <input type="text" class="form-control" id="comment" name="comment">
+            </div>
+            
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </form>
+          <div id="errorMessage" class="alert alert-danger d-none" role="alert">
+            Já existe uma inspeção aberta para esse veículo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success toast Inspection Detail-->
+<div id="successToast" class="toast align-items-center text-white bg-success border-0 position-fixed top-0 start-50 translate-middle-x" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      Detalhes da inspeção salvos com sucesso!
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+
+
+  <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api/apiService.js"></script>
+  <script src="js/models/inspectionModel.js"></script>
+  <script src="js/models/inspectableModel.js"></script>
+  <script src="js/models/inspectionDTO.js"></script>
+  <script src="js/services/inspectionService.js"></script>
+  <script src="js/services/vehicleService.js"></script>
+  <script src="js/views/home.js"></script>
+</body>
+</html>

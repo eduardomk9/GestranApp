@@ -1,0 +1,5 @@
+# Arquivos de build
+/build/
+
+# Dependências e módulos Node.js
+/node_modules/

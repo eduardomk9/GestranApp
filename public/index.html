@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="text-center mt-5">Login</h2>
+                <form id="login-form">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div id="error-message" class="alert alert-danger mt-3 d-none" role="alert"></div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/models/profileModel.js"></script>
+    <script src="js/api/apiService.js"></script>
+    <script src="js/services/authService.js"></script>
+    <script src="js/services/inspectionService.js"></script>
+    <script src="js/services/vehicleService.js"></script>
+    <script src="js/views/login.js"></script>
+    <script src="js/views/home.js"></script>
+</body>
+</html>
+    
