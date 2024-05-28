@@ -31,6 +31,7 @@ The application is ready to run/build with docker container or local with npm.
 2 - Login with a Inspector user, the table only render for the especific user;</br>
 3 - Create a Inspection</br>
 4 - Use the green button with 'plus' symbol to add the details about inspection, the filds of inspection should render dynamically if the data was created right in database</br>
+<img width="750" alt="image" src="https://github.com/eduardomk9/GestranApp/assets/15438089/03b9de85-9b05-41b4-80a9-fccbfe15805c">
 
 
 ## 🤝 TODO list
@@ -86,6 +87,7 @@ O aplicativo está pronto para ser executado/construído com contêiner Docker o
 2 - Faça login com um usuário Inspector, a tabela só será renderizada para o usuário específico;</br>
 3 - Crie uma Inspeção</br>
 4 - Use o botão verde com o símbolo de 'mais' para adicionar os detalhes sobre a inspeção, os campos da inspeção devem ser renderizados dinamicamente se os dados foram criados corretamente no banco de dados</br>
+<img width="750" alt="image" src="https://github.com/eduardomk9/GestranApp/assets/15438089/03b9de85-9b05-41b4-80a9-fccbfe15805c">
 
 
 ## 🤝 Lista de Tarefas
