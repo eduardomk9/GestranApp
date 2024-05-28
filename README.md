@@ -35,6 +35,7 @@ The application is ready to run/build with docker container or local with npm.
 
 
 ## 🤝 TODO list
+Fix minor bugs;</br>
 Views for, manage users, manage vehicles, supervisor home;</br>
 Review data workflow end-to-end;</br>
 
@@ -91,6 +92,7 @@ O aplicativo está pronto para ser executado/construído com contêiner Docker o
 
 
 ## 🤝 Lista de Tarefas
+Arrumar Bugs menores;</br>
 Visualizações para, gerenciar usuários, gerenciar veículos, página inicial do supervisor;</br>
 Revisar o fluxo de dados de ponta a ponta;</br>
 
